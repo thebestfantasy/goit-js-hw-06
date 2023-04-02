@@ -1,0 +1,13 @@
+.img {
+  width: 400px;
+}
+
+.list-item {
+  list-style: none;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
