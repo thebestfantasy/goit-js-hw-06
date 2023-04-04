@@ -4,6 +4,9 @@ userName.addEventListener("input", onInput);
 
 function onInput(evt) {
     const evtValue = evt.currentTarget.value;
-    dispName.textContent = evtValue;
-    console.log(evtValue);
+    if (evtValue === "") {
+        dispName.textContent = "Anonymous!"
+    } else {
+        dispName.textContent = evtValue;
+    }
 }

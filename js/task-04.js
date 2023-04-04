@@ -15,6 +15,5 @@ function onClick() {
 function ofClick(event) {
     counterValue -= 1;
     value.textContent = counterValue;
-    console.log(event.currentTarget);
 }
 

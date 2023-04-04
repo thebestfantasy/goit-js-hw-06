@@ -7,10 +7,10 @@ function handleSubmit(event) {
     const { email, password } = event.currentTarget.elements;
     
 
-    if (email.value === "" || password.value === "") {
+    if (email.value.trim() === "" || password.value.trim() === "") {
         return alert("Заповни всі поля, будь ласка!")
     } else {
-        data = { email: email.value, password: password.value };
+        data = { email: email.value.trim(), password: password.value.trim() };
         console.log(data);
         event.currentTarget.reset();
     }
